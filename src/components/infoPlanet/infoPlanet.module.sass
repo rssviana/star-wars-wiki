@@ -1,0 +1,53 @@
+@import '../../stylesheets/commons/common.sass'
+
+.infoPlanet
+  box-sizing: border-box
+  align-items: center
+  background-color: #f8f8f8
+  border-radius: rem(4)
+  color: #232323
+  display: flex
+  flex-direction: column
+  height: rem(400)
+  margin: rem(120) rem(20)
+  +breakpoint($md)
+    margin: calc(50vh - #{rem(200)}) auto auto
+    max-width: 60%
+
+.superTitle
+  +reset
+  color: #f2db27
+  font: rem(42) $jedi
+  max-width: 60%
+  position: fixed
+  text-align: center
+  text-shadow: 0px 5px 7px #f2db27
+  top: -20px
+  transform: rotateX(44deg)
+  +breakpoint($md)
+    font: rem(62) $jedi
+    top: 125px
+
+.heading
+  width: 100%
+  border-bottom: 1px solid #232323
+  text-align: center
+
+.planetName
+  +reset
+  color: #232323
+  font: 700 rem(38, rem(100)) $serif
+
+.caracteristics
+  +reset
+  width: 100%
+  display: flex
+  flex-direction: row
+  padding: rem(18)
+
+.text
+  +reset
+  color: #232323
+  font: rem(18, rem(28)) $sans
+
+    

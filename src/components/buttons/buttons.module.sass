@@ -1,0 +1,43 @@
+@import '../../stylesheets/commons/common.sass'
+
+.buttonsContainer
+  +reset
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: center
+  margin: rem(45) auto
+
+.button
+  background-color: #2196F3
+  border-radius: 4px
+  border: none
+  color: #FFFFFF
+  cursor: pointer
+  display: inline-block
+  font: 400 rem(28) $jedi
+  margin: 5px
+  padding: 20px
+  text-align: center
+  transition: all 0.2s
+  width: 200px
+  &:hover
+    background-color: #1976D2
+    box-shadow: 0px 0px 12px 0px rgba(25,118,210,1)
+
+.button span
+  cursor: pointer
+  display: inline-block
+  position: relative
+
+.button:first-child span:after
+  content: '\00ab'
+  left: -30px
+  position: absolute
+  top: 0
+
+.button:last-child span:after
+  content: '\00bb'
+  position: absolute
+  right: -65px
+  top: 0
