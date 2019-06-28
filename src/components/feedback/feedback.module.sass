@@ -1,0 +1,59 @@
+@import '../../stylesheets/commons/common.sass'
+
+.feedback
+  align-items: center
+  background-color: #FFFFFF
+  border: 1px solid #757575
+  border-radius: rem(4)
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin: rem(10)
+  position: fixed
+  width: calc(100% - #{rem(20)})
+  z-index: 1000
+
+  &_error
+    align-items: center
+    background-color: #FFCDD2
+    border: 1px solid #F44336
+    border-radius: rem(4)
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin: rem(10)
+    position: fixed
+    width: calc(100% - #{rem(20)})
+    z-index: 1000
+
+  &_warning
+    align-items: center
+    background-color: #FFECB3
+    border: 1px solid #FFC107
+    border-radius: rem(4)
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin: rem(10)
+    position: fixed
+    width: calc(100% - #{rem(20)})
+    z-index: 1000
+
+  &_success
+    align-items: center
+    background-color: #DCEDC8
+    border: 1px solid #4CAF50
+    border-radius: rem(4)
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin: rem(10)
+    position: fixed
+    width: calc(100% - #{rem(20)})
+    z-index: 1000
+
+.messager
+  +reset
+  color: #232323
+  font: rem(16, rem(36)) $sans
+  text-transform: uppercase

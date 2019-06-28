@@ -1,0 +1,55 @@
+@import './variables.sass'
+@import './functions.sass'
+@import './fonts.scss'
+
+=breakpoint($bp: $sm)
+	@media (min-width: rem(map-get($bp, bkp)))
+		@content
+
+=double-line($left: 0, $right: 0)
+	position: relative
+	&:before
+		border-bottom: 1px solid $red
+		border-top: 3px solid $red
+		content: ""
+		display: block
+		left: $left
+		padding: 2px 0 0
+		position: absolute
+		right: $right
+		top: 0
+
+=clearfix
+	&:after
+		clear: both
+		content: ""
+		display: table
+
+=cover
+	background-clip: content-box
+	background-color: $gray-lighter
+	background-position: center top
+	background-size: cover
+
+=reset
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+=reset-list
+	+reset
+	list-style: none
+
+
+// style preset
+html
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)
+  height: 100%
+  overflow: hidden
+
+body
+  +reset
+
+
